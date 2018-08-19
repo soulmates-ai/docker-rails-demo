@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## First, build the app
+`docker-compose build`
 
-Things you may want to cover:
+## Create the database
+`docker-compose run web scripts/wait-for-it.sh db:5432 -- "rake db:drop db:setup"`
 
-* Ruby version
+## Run the app
+`docker-compose up`
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
