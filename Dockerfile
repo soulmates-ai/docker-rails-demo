@@ -1,4 +1,5 @@
 FROM ruby:2.5.1-slim
+ARG precompileassets
 
 RUN apt-get -y update && \
       apt-get install --fix-missing --no-install-recommends -qq -y \
@@ -30,3 +31,5 @@ ARG INSTALL_PATH=/opt/dockerrailsdemo
 ENV INSTALL_PATH $INSTALL_PATH
 WORKDIR $INSTALL_PATH
 COPY . .
+
+RUN scripts/potential_asset_precompile.sh $precompileassets
