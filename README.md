@@ -1,6 +1,6 @@
 # Welcome to Docker Rails Demo
-Rails, Docker and Webpacker is an awesome combination, for instance to devel React/Rails apps with.
-This demo app uses [Rails 5](https://rubyonrails.org/), [Webpacker](https://github.com/rails/webpacker) and [Docker](https://www.docker.com/). In development mode, it used [webpacker-dev-server](https://github.com/webpack/webpack-dev-server). As database it uses PostgreSQL
+Rails, Docker and Webpacker is an awesome combination, for instance to develop React/Rails apps with.
+This demo app uses [Rails 5](https://rubyonrails.org/), [Webpacker](https://github.com/rails/webpacker) and [Docker](https://www.docker.com/). In development mode, it used [webpacker-dev-server](https://github.com/webpack/webpack-dev-server) for hot Javascript reloading. As database it uses [PostgreSQL](https://www.postgresql.org/).
 
 ## First, build the app for development
 `docker-compose build`
