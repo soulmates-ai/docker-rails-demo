@@ -13,5 +13,4 @@ This demo app uses [Rails 5](https://rubyonrails.org/), [Webpacker](https://gith
 ## Build the app for production
 `docker build -t docker-rails-demo .`
 
-
-
+Now open http://localhost:3000 and look at your Javascript console to see messages
